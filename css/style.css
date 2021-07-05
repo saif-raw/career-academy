@@ -435,6 +435,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 28px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
@@ -1523,8 +1524,6 @@ border: 0;
 
 
 #hero h1 {
-  /* margin: 0; */
-  
   font-size: 48px;
   font-weight: 700;
   line-height: 56px;
@@ -1533,38 +1532,15 @@ border: 0;
 }
 
 
-.typewriter {
-  font-family: Courier, monospace;
-display: inline-block;
-}
-
-.typewriter-text {
-  display: inline-block;
-  overflow: hidden;
-  letter-spacing: 2px;
- animation: typing 2s steps(30, end), blink .75s step-end infinite;
-  white-space: nowrap;
-  font-size: 30px;
+.glow {
+  font-size: 48px;
   font-weight: 700;
-  border-right: 4px solid #ffffff00;
-  box-sizing: border-box;
+  line-height: 56px;
+  font-family: "Poppins", sans-serif;
+  color: #c50000;
+  transition: text-shadow 0.5s;
 }
 
-@keyframes typing {
-  from { 
-      width: 0% 
-  }
-  to { 
-      width: 100% 
-  }
+.glow:hover {
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 40px #FFFFFF, 0 0 80px #FFFFFF;
 }
-
-@keyframes blink {
-  from, to { 
-      border-color: transparent 
-  }
-  50% { 
-      border-color: #ffffff;  
-  }
-}
-
