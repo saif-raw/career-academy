@@ -537,6 +537,10 @@ section {
   color: #00ff2a;
 }
 
+.about-container{
+  padding-top: 20px;
+}
+
 .about .content .learn-more-btn {
   background: #000066;
   color: #fff;
@@ -1538,10 +1542,96 @@ border: 0;
   font-weight: 700;
   line-height: 56px;
   font-family: "Poppins", sans-serif;
-  color: #c50000;
+  color: #0300ac;
+  text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 40px #FFFFFF, 0 0 80px #FFFFFF;
   transition: text-shadow 0.5s;
 }
 
 .glow:hover {
   text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 40px #FFFFFF, 0 0 80px #FFFFFF;
+}
+
+.channel-link{
+  color: #fbff00;
+}
+
+
+
+
+
+
+
+#zero {
+  width: 100%;
+  height: 50vh;
+  /* background: url("../img/selected.jpg") top center; */
+  background: url("../img/selected.jpg") top center;
+  background-size: cover;
+  position: relative;
+}
+
+#hero:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero .container {
+  padding-top: 72px;
+}
+
+@media (max-width: 992px) {
+  #hero .container {
+    padding-top: 62px;
+  }
+}
+
+#hero h2 {
+  color: #eee;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 35px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+#hero .btn-get-started:hover {
+  background: #000066;
+  border: 2px solid #000066;
+}
+
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: 100vh;
+  }
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
